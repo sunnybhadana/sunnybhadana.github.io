@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font: 400 15px/1.8 "Lato", sans-serif;
+            color: #777;
+        }
+
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+            position: relative;
+            opacity: 0.65;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .bgimg-1 {
+            background-image: url("img/desk-coffee.jpg");
+            min-height: 100%;
+        }
+
+        .bgimg-2 {
+            background-image: url("img/keyboard.jpg");
+            min-height: 400px;
+        }
+
+        .bgimg-3 {
+            background-image: url("img/white-keyboard.jpg");
+            min-height: 400px;
+        }
+
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+        }
+
+        .caption span.border {
+            background-color: #111;
+            color: #fff;
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 10px;
+        }
+
+        h3 {
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font: 20px "Lato", sans-serif;
+            color: #111;
+        }
+        h4 {
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font: 16px "Lato", sans-serif;
+        }
+        .horizontal-line {
+            width: 50px;
+        }
+
+        form[name=contact_form] {
+            margin: 40px auto;
+            max-width: 560px;
+            min-width: 200px;
+            text-align: center;
+        }
+
+        form[name=contact_form] > .input-field-container > input[type=text], form[name=contact_form] > .input-field-container > input[type=email], form[name=contact_form] > .input-field-container > input[type=button], form[name=contact_form] > .input-field-container > textarea {
+            width: 88.5%;
+            height: 50px;
+            font-size: 20.5px;
+            border: none;
+            padding: 15px;
+            border-bottom: 2px solid;
+            color: #fff;
+            outline: none;
+        }
+
+        form[name=contact_form] > .input-field-container > textarea {
+            height: 250px;
+            overflow: hidden;
+            resize: none
+        }
+
+        #name, #email, #message {
+            background: #282E34;
+        }
+        #name {
+            background-repeat: no-repeat;
+            padding-left: 60px;
+            background-size: 40px
+        }
+
+        #email {
+            /*background-image: url(img/email.png);*/
+            /*background-repeat: no-repeat;*/
+            padding-left: 60px
+        }
+
+        #message {
+            /*background-image: url(img/feedback.png);*/
+            /*background-repeat: no-repeat;*/
+            padding-left: 60px
+        }
+
+        #contactBtn {
+            /*background-image: url(img/send.png);*/
+            /*background-repeat: no-repeat;*/
+            background-position-x: 30%;
+            width: 100%;
+            height: 50px;
+            border: 1px solid #e0e0e0;
+            color: #fff;
+            background: transparent;
+            font-size: 20px;
+            outline: none;
+        }
+        .input-icon{
+            position: absolute;
+            left: 3px;
+            font-size: 36px;
+            top: calc(50% - 0.5em); /* Keep icon in center of input, regardless of the input height */
+        }
+        .message {
+            position: absolute;
+            left: 3px;
+            font-size: 36px;
+            top: calc(10% - 0.5em); /* Keep icon in center of input, regardless of the input height */
+        }
+        .content {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .input-field-container {
+            position: relative;
+        }
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1024px) {
+            .bgimg-1, .bgimg-2, .bgimg-3 {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="bgimg-1">
+    <div class="caption">
+        <span class="border">WELCOME TO MY PORTFOLIO</span>
+    </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+    <h3 style="text-align:center;">Who am I?</h3>
+    <p>I am a web developer.I love to make new friends.
+        I am also interesting in doing amazing tricks.
+        I am pursuing MCA (Master in Computer Application).
+        I also love Ethical Hacking and some bad stuffs :P</p>
+    <p>I love to create beautiful, usable, professional websites using best practice accessibility and the latest W3C web standards guidelines.
+        All my websites are lovingly hand coded.</p>
+
+</div>
+
+<div class="bgimg-2">
+    <div class="caption">
+        <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">MY SKILLS</span>
+    </div>
+</div>
+
+<div style="position:relative;">
+    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        <h3 style="text-align:center; color:#fff">Skills</h3>
+        <hr class="horizontal-line"/>
+        <h4 style="text-align:center; color:#03A9F4">Web Development</h4>
+        <p style="text-align:center; color:#fff; letter-spacing: 4px">HTML5, CSS3, Java Script, Ajax, Php, Mysql</p>
+
+        <hr class="horizontal-line"/>
+        <h4 style="text-align:center; color:#03A9F4; ">Mobile / Desktop</h4>
+        <h4 style="text-align:center; color:#fff">Android, C#(C Sharp)</h4>
+
+        <hr class="horizontal-line"/>
+        <h4 style="text-align:center; color:#03A9F4">Languages</h4>
+        <h4 style="text-align:center; color:#fff">C, C++, C# and Java</h4>
+        <hr class="horizontal-line"/>
+        <h4 style="text-align:center; color:#03A9F4">What I Use</h4>
+        <h4 style="text-align:center; color:#fff">Dreamviewer, Android Studio, PHP Storm and Microsoft Studio.</h4>
+        <hr class="horizontal-line"/>
+
+        <h4 style="text-align:center; color:#03A9F4">Operating System</h4>
+        <h4 style="text-align:center; color:#fff">OWINDOWS, LINUX.</h4>
+
+    </div>
+</div>
+
+<div class="bgimg-3">
+    <div class="caption">
+        <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">CONTACT ME</span>
+    </div>
+</div>
+
+<div style="position:relative;">
+    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        <div class="content">
+            <h4 style="text-align: center; color: #03A9F4">
+                If you'd like to hire me, or just want to know more details, please feel free to
+                send me a mail Or fill in the form below.
+            </h4>
+        </div>
+        <form name="contact_form" action="mailto:sunnybhadana44@gmail.com" id="contact_form">
+            <span id="status"></span>
+             <div class="input-field-container">
+                 <i class="fa fa-user input-icon" aria-hidden="true"></i>
+                 <input type="text" id="name" autocomplete="off" placeholder="Your Name"/>
+             </div>
+            <div class="input-field-container">
+                <i class="fa fa-envelope input-icon" aria-hidden="true"></i>
+                <input type="email" id="email" autocomplete="off" placeholder="John@example.com">
+            </div>
+            <div class="input-field-container">
+                <i class="fa fa-comments input-icon message" aria-hidden="true"></i>
+                <textarea cols="25" rows="5" autocomplete="off" id="message" placeholder="Your Query"></textarea>
+            </div>
+            <div class="input-field-container">
+                <input type="submit" id="contactBtn" value="Send Query"/>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<div class="bgimg-1">
+    <div class="caption">
+        <span class="border">THANKS FOR VISITING HERE :)</span>
+    </div>
+</div>
+<script>
+    function contactForm() {
+
+    }
+</script>
+</body>
+</html>
